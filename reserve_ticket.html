@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bus Ticket System - Reserve Your Seat</title>
+</head>
+<body>
+
+<!-- ==================== PAGE 2: ACQUIRE & RESERVE FORM (FULL SCREEN TABLE LAYOUT) ==================== -->
+<a name="reserve"></a>
+
+<!-- ONE GIANT TABLE THAT HOLDS EVERYTHING - MATCHING PAGE 1 STYLE -->
+<table border="1" width="100%" bgcolor="#F0F0F0">
+
+<!-- TITLE ROW -->
+<th colspan="2" bgcolor="#003366"><font size="6" >✍️ ACQUIRE & RESERVE BUS TICKET ✍️</font></th>
+
+<!-- SUBTITLE ROW -->
+<tr bgcolor="#FF9900">
+<td colspan="2" align="center"><font size="4"><b>⭐ FILL THE FORM BELOW TO RESERVE YOUR TICKET ⭐</b></font></td>
+</tr>
+
+<!-- FORM SECTION - USING INNER TABLE FOR ALIGNMENT -->
+<tr >
+<td colspan="2" align="center" valign="top" style="padding: 30px;">
+
+<!-- INNER TABLE FOR FORM FIELDS - CLEAN ALIGNMENT -->
+<table border="0" width="80%" cellpadding="12">
+
+<!-- Full names row -->
+<form>
+<tr>
+<td width="35%" align="right"><b><font size="4">👤 Full names:</font></b></td>
+<td align="left"><input type="text" placeholder="Enter full names" name="fullname" size="40" style="padding: 8px; font-size: 14px; width: 100%; max-width: 300px;"/></td>
+</tr>
+
+<!-- Phone number row -->
+<tr>
+<td align="right"><b><font size="4">📞 Phone number:</font></b></td>
+<td align="left"><input type="number" placeholder="07XXXXXXXX" name="phone" size="40" style="padding: 8px; font-size: 14px; width: 100%; max-width: 300px;"/></td>
+</tr>
+
+<!-- Email address row -->
+<tr>
+<td align="right"><b><font size="4">📧 Email address:</font></b></td>
+<td align="left"><input type="text" placeholder="youremail@example.com" name="email" size="40" style="padding: 8px; font-size: 14px; width: 100%; max-width: 300px;"/></td>
+</tr>
+
+<!-- Travel date row -->
+<tr>
+<td align="right"><b><font size="4">📅 Travel date:</font></b></td>
+<td align="left"><input type="date" name="traveldate" style="padding: 8px; font-size: 14px; width: 100%; max-width: 300px;"/></td>
+</tr>
+
+<!-- Select destination row -->
+<tr>
+<td align="right"><b><font size="4">🚌 Select destination:</font></b></td>
+<td align="left">
+<select name="destination" style="padding: 8px; font-size: 14px; width: 100%; max-width: 300px;">
+<option value="1">Select destination</option>
+<option value="2">Kigali → Musanze - 3,000 RWF</option>
+<option value="3">Kigali → Huye - 4,000 RWF</option>
+<option value="4">Kigali → Rubavu - 5,000 RWF</option>
+<option value="5">Kigali → Nyamata - 2,500 RWF</option>
+<option value="6">Kigali → Kibuye - 4,500 RWF</option>
+</select>
+</td>
+</tr>
+
+<!-- Select departure time row -->
+<tr>
+<td align="right"><b><font size="4">⏰ Select departure time:</font></b></td>
+<td align="left">
+<select name="time" style="padding: 8px; font-size: 14px; width: 100%; max-width: 300px;">
+<option value="1">Select time</option>
+<option value="2">Morning (07:00 / 08:00 / 09:30)</option>
+<option value="3">Afternoon (13:00 / 14:00 / 15:30)</option>
+</select>
+</td>
+</tr>
+
+<!-- Number of tickets row -->
+<tr>
+<td align="right"><b><font size="4">🎫 Number of tickets:</font></b></td>
+<td align="left"><input type="number" placeholder="1-10 tickets" name="quantity" min="1" max="10" style="padding: 8px; font-size: 14px; width: 100%; max-width: 150px;"/></td>
+</tr>
+
+<!-- Preferred seat row (radio buttons) -->
+<tr>
+<td align="right"><b><font size="4">💺 Preferred seat:</font></b></td>
+<td align="left">
+<input type="radio" name="seat" value="window"/> <font size="3">Window</font>&nbsp;&nbsp;&nbsp;
+<input type="radio" name="seat" value="aisle"/> <font size="3">Aisle</font>&nbsp;&nbsp;&nbsp;
+<input type="radio" name="seat" value="any"/> <font size="3">Any</font>
+</td>
+</tr>
+
+<!-- Extra luggage checkbox -->
+<tr>
+<td align="right"><b><font size="4">🧳 Extra luggage?</font></b></td>
+<td align="left">
+<input type="checkbox" name="luggage" value="yes"/> <font size="3">Yes, I have extra luggage <font color='dark yellow'><u>(Cost +30%)</u></font></font>
+</td>
+</tr>
+
+<!-- Special requests row -->
+<tr>
+<td align="right" valign="top"><b><font size="4">📝 Special requests:</font></b></td>
+<td align="left">
+<textarea cols="50" rows="4" name="comments" placeholder="Any special requirements? (meal, disability assistance, etc.)" style="padding: 8px; font-size: 14px; width: 100%; max-width: 400px;"></textarea>
+</td>
+</tr>
+
+<!-- Payment method row -->
+<tr>
+<td align="right"><b><font size="4">💰 Payment method:</font></b></td>
+<td align="left">
+<select name="payment" style="padding: 8px; font-size: 14px; width: 100%; max-width: 300px;">
+<option value="1">Pay at terminal (cash)</option>
+<option value="2">Mobile Money (MoMo)</option>
+<option value="3">Bank transfer</option>
+</select>
+</td>
+</tr>
+
+<!-- BUTTONS ROW -->
+<tr>
+<td colspan="2" align="center" style="padding-top: 20px;">
+<input type="submit" value="🚀 RESERVE MY TICKET 🚀" style="background-color: #003366;font-size: 18px; padding: 12px 30px; border: none; cursor: pointer; font-weight: bold; margin-right: 20px;"/>
+<input type="reset" value="🗑️ Clear Form 🗑️" style="background-color: #FF9900; color: black; font-size: 18px; padding: 12px 30px; border: none; cursor: pointer; font-weight: bold;"/>
+</td>
+</tr>
+</form>
+</table>
+
+</td>
+</tr>
+
+<!-- SPACER ROW -->
+<tr bgcolor="#003366"><td colspan="2" height="5"></td></tr>
+
+<!-- IMPORTANT NOTE SECTION (styled like page 1) -->
+<tr bgcolor="rgb(255, 240, 230)">
+<td colspan="2" align="center" style="padding: 15px;">
+<b><font size="4">⚠️ IMPORTANT RESERVATION NOTES ⚠️</font></b><br/>
+<font size="3"><i>📱 After reservation, you will receive an SMS confirmation. Please arrive <b>30 minutes</b> before departure at the terminal.</i></font>
+</td>
+</tr>
+
+<!-- SPACER ROW -->
+<tr bgcolor="#003366"><td colspan="2" height="5"></td></tr>
+
+<!-- CONTACT INFORMATION - MATCHING PAGE 1 STYLE -->
+<tr >
+<td colspan="2" align="center" style="padding: 20px;">
+<b><font size="5">📞 CONTACT INFORMATION 📞</font></b><br/><br/>
+<font size="4">
+📞 Phone: 079 123 4567 &nbsp;&nbsp;|&nbsp;&nbsp;
+📧 Email: support@busticket.rw &nbsp;&nbsp;|&nbsp;&nbsp;
+📍 Nyabugogo Terminal, Kigali
+</font><br/><br/>
+<font size="3"><b>⏰ Customer Service Hours:</b> 24/7 (Daily)</font>
+</td>
+</tr>
+
+<!-- SPACER ROW -->
+<tr bgcolor="#003366"><td colspan="2" height="5"></td></tr>
+
+<!-- NAVIGATION LINK BACK TO PAGE 1 - MATCHING PAGE 1 FOOTER STYLE -->
+<tr bgcolor="#003366">
+<td colspan="2" align="center" style="padding: 12px;">
+<font  size="4"><b>🚀 NEED BUS INFORMATION? 🚀</b></font>
+</td>
+</tr>
+
+<tr bgcolor="#FF9900">
+<td colspan="2" align="center" style="padding: 12px;">
+<a href="home.html"><font size="5"><b>📋 CLICK HERE FOR BUS SCHEDULE & INFORMATION →</b></font></a>
+</td>
+</tr>
+
+
+<tr bgcolor="#003366">
+<td colspan="2" align="center" style="padding: 10px;">
+<font color="white" size="2"><b>TUGENDE SERVICE | Safe Travels, Happy Journeys! 🚌</b></font>
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>

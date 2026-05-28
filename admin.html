@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Login - Bus System</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body style="margin:0; padding:0; background:#F0F0F0; font-family:Segoe UI,Roboto,sans-serif;">
+
+<!-- ==================== COMPACT ADMIN LOGIN PAGE (FITS PERFECTLY IN IFRAME) ==================== -->
+
+<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#F0F0F0">
+    
+    <!-- TITLE ROW -->
+    <tr bgcolor="#800000">
+        <td align="center" style="padding:15px 10px;">
+            <font size="5" color="white"><b>👑 ADMIN LOGIN</b></font>
+        </td>
+    </tr>
+    
+    <!-- SUBTITLE -->
+    <tr bgcolor="#FF9900">
+        <td align="center" style="padding:8px;">
+            <font size="3"><b>⭐ AUTHORIZED PERSONNEL ONLY ⭐</b></font>
+        </td>
+    </tr>
+    
+    <!-- LOGIN FORM (COMPACT) -->
+    <tr>
+        <td align="center" style="padding:20px 15px;">
+            <table border="0" width="100%" cellpadding="8" style="max-width:320px; margin:0 auto; background:#FFF8E7;">
+                <form action="admin_dashboard.html" method="get">
+                    <tr>
+                        <td align="right"><b>👤 Username:</b></td>
+                        <td align="left"><input type="text" name="admin_user" placeholder="Admin ID" style="padding:6px; width:100%;"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><b>🔐 Password:</b></td>
+                        <td align="left"><input type="password" name="admin_pass" placeholder="Password" style="padding:6px; width:100%;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center" style="padding-top:12px;">
+                            <input type="submit" value="✅ LOGIN" style="background:#800000; color:white; font-size:15px; padding:8px 25px; border:none; font-weight:bold; cursor:pointer;">
+                            <input type="reset" value="Clear" style="background:#FF9900; color:black; font-size:15px; padding:8px 20px; border:none; font-weight:bold; cursor:pointer; margin-left:10px;">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+            <div style="margin-top:15px;">
+                <font size="2"><i>🔐 Demo: username: <b>admin</b> , any password</i></font>
+            </div>
+        </td>
+    </tr>
+    
+    <!-- SPACER -->
+    <tr bgcolor="#800000"><td style="height:4px;"></td></tr>
+    
+    <!-- BACK TO USER LOGIN -->
+    <tr bgcolor="rgb(255, 240, 230)">
+        <td align="center" style="padding:12px;">
+            <a href="user_login.html"><font size="3"><b>⬅️ BACK TO USER LOGIN</b></font></a> &nbsp;|&nbsp;
+            <a href="home.html"><font size="3"><b>🚌 BUS INFO</b></font></a>
+        </td>
+    </tr>
+    
+    <!-- FOOTER -->
+    <tr bgcolor="#800000">
+        <td align="center" style="padding:10px;">
+            <font color="white" size="2">Restricted area - Authorized access only</font>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
