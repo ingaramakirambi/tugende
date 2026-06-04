@@ -1,0 +1,239 @@
+/* TUGENDE BUS SYSTEM - PURE ELEMENT SELECTORS */
+/* No classes needed. Just link this file and it styles everything automatically */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: #eef2f5;
+}
+
+/* TABLES */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #F0F0F0;
+}
+
+th, td {
+    padding: 10px;
+}
+
+/* BORDER RADIUSES - ALL ROUNDED */
+img {
+    border-radius: 20px;
+}
+
+input, select, textarea {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    font-size: 14px;
+    background: white;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #FF9900;
+}
+
+/* ALL BUTTONS (input buttons, form buttons) */
+input[type="submit"], 
+input[type="reset"], 
+button {
+    border-radius: 30px !important;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Submit buttons (blue) */
+input[type="submit"] {
+    background: #003366;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background: #002244;
+}
+
+/* Reset buttons (orange) */
+input[type="reset"] {
+    background: #FF9900;
+    color: black;
+}
+
+input[type="reset"]:hover {
+    background: #e08800;
+}
+
+/* Cancel/delete buttons */
+button[onclick*="Cancel"], 
+button:contains("Cancel") {
+    background: #CC0000;
+    color: white;
+}
+
+/* ALL LINKS inside navigation */
+a {
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 6px 15px;
+    display: inline-block;
+}
+
+/* Form container tables */
+form table {
+    background: #FFF8E7;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+/* Schedule tables */
+table[border="1"] th {
+    background: #003366;
+    color: white;
+}
+
+table[border="1"] tr:hover {
+    background: #FFF8E7;
+}
+
+/* Headers - based on bgcolor */
+[bgcolor="#003366"] {
+    background: #003366;
+}
+
+[bgcolor="#FF9900"] {
+    background: #FF9900;
+}
+
+[bgcolor="#800000"] {
+    background: #800000;
+}
+
+[bgcolor="white"] {
+    background: white;
+}
+
+[bgcolor="#F9F9F9"] {
+    background: #F9F9F9;
+}
+
+[bgcolor="#E6F3FF"] {
+    background: #E6F3FF;
+}
+
+[bgcolor="rgb(255, 240, 230)"] {
+    background: rgb(255, 240, 230);
+    border-radius: 16px;
+}
+
+[bgcolor="#FFF8E7"] {
+    background: #FFF8E7;
+}
+
+[bgcolor="#FFE0B3"] {
+    background: #FFE0B3;
+}
+
+/* Make all cells with buttons look consistent */
+td button {
+    border-radius: 30px;
+    padding: 5px 12px;
+    margin: 0 3px;
+    font-weight: bold;
+}
+
+td button:first-child {
+    background: #FF9900;
+    border: none;
+}
+
+td button:last-child {
+    background: #CC0000;
+    color: white;
+    border: none;
+}
+
+/* Spacer rows */
+tr[bgcolor="#003366"] td[height="5"] {
+    height: 5px;
+}
+
+/* Images in tables */
+td img {
+    border-radius: 20px;
+    border: 2px solid #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    th, td {
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    input, select, textarea {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    
+    input[type="submit"], input[type="reset"], button {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+    
+    font[size="6"] {
+        font-size: 20px !important;
+    }
+    
+    font[size="5"] {
+        font-size: 16px !important;
+    }
+    
+    font[size="4"] {
+        font-size: 14px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
